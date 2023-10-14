@@ -12,6 +12,9 @@
   margin-bottom: 3rem;
   border-bottom: 1px solid var(--text-400);
 }
+.note-header select {
+  margin-top: -20px;
+}
 
 .note-app {
   display: flex;
@@ -100,4 +103,23 @@
 
 .note-item__footer {
   color: var(--text-300);
+}
+
+@media (max-width: 479px) {
+  .note-app {
+    flex-direction: column;
+  }
+  .note-container {
+    width: 100%;
+  }
+  .note-header h1 {
+    font-size: 1.1rem;
+  }
+  .add-new-note {
+    width: 100%;
+  }
+  .add-new-note h2 {
+    font-size: 1rem;
+    font-weight: 700;
+  }
 }
